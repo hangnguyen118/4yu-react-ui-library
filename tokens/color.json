@@ -1,0 +1,18 @@
+{
+  "color": {
+    "primary": {
+      "$type": "color",
+      "$value": "#2563eb"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "#111827"
+    }
+  },
+  "spacing": {
+    "small": {
+      "$type": "dimension",
+      "$value": "8px"
+    }
+  }
+}
