@@ -1,0 +1,17 @@
+{
+  "radius": {
+    "small": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "medium": {
+      "$type": "dimension",
+      "$value": "6px"
+    },
+    "large": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Proposed next step above the existing 4px and 6px radii."
+    }
+  }
+}

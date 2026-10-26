@@ -1,0 +1,51 @@
+{
+  "typography": {
+    "font-family": {
+      "base": {
+        "$type": "fontFamily",
+        "$value": ["system-ui", "Segoe UI", "Roboto", "sans-serif"],
+        "$description": "Existing --sans font stack from src/index.css."
+      }
+    },
+    "font-size": {
+      "small": {
+        "$type": "dimension",
+        "$value": "15px"
+      },
+      "medium": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "large": {
+        "$type": "dimension",
+        "$value": "18px"
+      }
+    },
+    "font-weight": {
+      "normal": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": 600
+      }
+    },
+    "line-height": {
+      "normal": {
+        "$type": "number",
+        "$value": 1.45,
+        "$description": "Unitless equivalent of the existing 145% body line height."
+      },
+      "relaxed": {
+        "$type": "number",
+        "$value": 1.6,
+        "$description": "Proposed relaxed line height for multiline content."
+      }
+    }
+  }
+}

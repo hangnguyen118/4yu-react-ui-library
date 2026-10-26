@@ -4,6 +4,36 @@
 
 :root {
   --color-primary: #2563eb;
-  --color-text: #111827;
-  --spacing-small: 8px;
+  --color-text: #111827; /** Existing text color; preserves the --color-text CSS variable. */
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b6375;
+  --color-text-on-action: #ffffff; /** Text on the primary action background. */
+  --color-source-muted-text: #6b6375; /** Verified light-mode --text in src/index.css. */
+  --color-source-surface: #ffffff; /** Verified light-mode --bg in src/index.css. */
+  --color-source-muted-surface: #f4f3ec; /** Verified light-mode --code-bg in src/index.css. */
+  --color-source-border: #e5e4e7; /** Verified light-mode --border in src/index.css. */
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f4f3ec;
+  --color-border-default: #e5e4e7;
+  --color-border-focus: #2563eb;
+  --color-action-primary: #2563eb;
+  --radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-large: 8px; /** Proposed next step above the existing 4px and 6px radii. */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-small: 8px; /** Compatibility alias for the existing --spacing-small CSS variable. */
+  --typography-font-family-base: system-ui, 'Segoe UI', Roboto, sans-serif; /** Existing --sans font stack from src/index.css. */
+  --typography-font-size-small: 15px;
+  --typography-font-size-medium: 16px;
+  --typography-font-size-large: 18px;
+  --typography-font-weight-normal: 400;
+  --typography-font-weight-medium: 500;
+  --typography-font-weight-semibold: 600;
+  --typography-line-height-normal: 1.45; /** Unitless equivalent of the existing 145% body line height. */
+  --typography-line-height-relaxed: 1.6; /** Proposed relaxed line height for multiline content. */
 }

@@ -5,14 +5,72 @@
       "$value": "#2563eb"
     },
     "text": {
-      "$type": "color",
-      "$value": "#111827"
-    }
-  },
-  "spacing": {
-    "small": {
-      "$type": "dimension",
-      "$value": "8px"
+      "$root": {
+        "$type": "color",
+        "$value": "#111827",
+        "$description": "Existing text color; preserves the --color-text CSS variable."
+      },
+      "primary": {
+        "$type": "color",
+        "$value": "{color.text.$root}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.source.muted-text}"
+      },
+      "on-action": {
+        "$type": "color",
+        "$value": "{color.background.primary}",
+        "$description": "Text on the primary action background."
+      }
+    },
+    "source": {
+      "muted-text": {
+        "$type": "color",
+        "$value": "#6b6375",
+        "$description": "Verified light-mode --text in src/index.css."
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "#fff",
+        "$description": "Verified light-mode --bg in src/index.css."
+      },
+      "muted-surface": {
+        "$type": "color",
+        "$value": "#f4f3ec",
+        "$description": "Verified light-mode --code-bg in src/index.css."
+      },
+      "border": {
+        "$type": "color",
+        "$value": "#e5e4e7",
+        "$description": "Verified light-mode --border in src/index.css."
+      }
+    },
+    "background": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.source.surface}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.source.muted-surface}"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.source.border}"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{color.primary}"
+      }
+    },
+    "action": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.primary}"
+      }
     }
   }
 }
